@@ -27,7 +27,6 @@ public struct TodoItem {
         self.isDone = isDone
         self.dateСreation = dateСreation
         self.dateChanging = dateChanging
-        self.hexColor = hexColor
     }
 }
 
@@ -181,7 +180,6 @@ public enum JSONKeys: String {
     case isDone = "is_done"
     case dateСreation = "date_creation"
     case dateChanging = "date_changing"
-    case hexColor = "hex_color"
 }
 
 public enum CSVSeparator: String {
