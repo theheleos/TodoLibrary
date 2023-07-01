@@ -142,12 +142,12 @@ extension TodoItem {
 
 // MARK: - Enum
 
-enum Importance: String {
+public enum Importance: String {
     case unimportant
     case normal
     case important
     
-    init?(rawValue: Int) {
+    public init?(rawValue: Int) {
         switch rawValue {
         case 0:
             self = .unimportant
@@ -160,7 +160,7 @@ enum Importance: String {
         }
     }
     
-    var value: Int {
+    public var value: Int {
         switch self {
         case .unimportant:
             return 0
